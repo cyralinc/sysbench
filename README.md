@@ -26,7 +26,7 @@ To allow the use of some sysbench parameters, some MySQL global variables may ne
 
 ```
 SET GLOBAL max_connections = 10000;
-SET GLOBAL max_prepared_stmt_count = 10000;
+SET GLOBAL max_prepared_stmt_count = 1048576;
 ```
 
 Then, to prepare a MySQL database to be used with sysbench, a command like the following can be issued:
