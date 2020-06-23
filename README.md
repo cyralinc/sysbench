@@ -7,7 +7,7 @@ Set of sysbench related files.
 The `Dockerfile` present in this directory can be used to build a sysbench Docker image. To do that, run:
 
 ```
-docker build . -t cyral-sysbench
+docker build . -t cyral-sysbench:v0.0.1
 ```
 
 After building the Docker container image, we can use it to execute sysbench commands.
