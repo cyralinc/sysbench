@@ -12,7 +12,12 @@ docker build . -t cyral-sysbench:v0.0.1
 
 After building the Docker container image, we can use it to execute sysbench commands.
 
-### MySQL
+## Using a prebuilt docker image
+```
+docker pull cyral-sysbench
+```
+
+### MySQL/Galera
 
 A requirement to execute sysbench against a MySQL database is to create a schema and a user dedicated to sysbench.
 
