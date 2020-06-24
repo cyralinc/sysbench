@@ -118,7 +118,7 @@ docker run \
 	--rm \
 	--name=sb \
 	--network="host" \
-	cyral-sysbench \
+	gcr.io/cyralpublic/cyral-sysbench:v0.0.1 \
 	sysbench \
 	--db-driver=mysql \
 	--tables=32 \
