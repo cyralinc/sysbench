@@ -7,14 +7,14 @@ Set of sysbench related files.
 The `Dockerfile` present in this directory can be used to build a sysbench Docker image. To do that, run:
 
 ```
-docker build . -t cyral-sysbench:v0.0.1
+docker build . -t cyral-sysbench:v0.0.2
 ```
 
 After building the Docker container image, we can use it to execute sysbench commands.
 
 ## Using a prebuilt docker image
 ```
-docker pull gcr.io/cyralpublic/cyral-sysbench:v0.0.1
+docker pull gcr.io/cyralpublic/cyral-sysbench:v0.0.2
 ```
 
 ### MySQL/Galera
@@ -40,7 +40,7 @@ docker run \
 	--rm \
 	--name=sb \
 	--network="host" \
-	gcr.io/cyralpublic/cyral-sysbench:v0.0.1 \
+	gcr.io/cyralpublic/cyral-sysbench:v0.0.2 \
 	sysbench \
 	--db-driver=mysql \
 	--tables=32 \
@@ -63,7 +63,7 @@ docker run \
 	--rm \
 	--name=sb \
 	--network="host" \
-	gcr.io/cyralpublic/cyral-sysbench:v0.0.1 \
+	gcr.io/cyralpublic/cyral-sysbench:v0.0.2 \
 	sysbench \
 	--db-driver=mysql \
 	--report-interval=3 \
@@ -90,7 +90,7 @@ docker run \
 	--rm \
 	--name=sb \
 	--network="host" \
-	gcr.io/cyralpublic/cyral-sysbench:v0.0.1 \
+	gcr.io/cyralpublic/cyral-sysbench:v0.0.2 \
 	sysbench \
 	--db-driver=mysql \
 	--report-interval=3 \
@@ -118,7 +118,7 @@ docker run \
 	--rm \
 	--name=sb \
 	--network="host" \
-	gcr.io/cyralpublic/cyral-sysbench:v0.0.1 \
+	gcr.io/cyralpublic/cyral-sysbench:v0.0.2 \
 	sysbench \
 	--db-driver=mysql \
 	--tables=32 \
